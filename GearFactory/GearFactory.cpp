@@ -1,5 +1,8 @@
 #include "GearFactory.h"
 
+#include <limits>
+#include <math.h>
+
 typedef std::vector<int> intVector;
 
 std::vector<int> GearFactory::run(std::vector<int> pegs) {
@@ -9,29 +12,28 @@ std::vector<int> GearFactory::run(std::vector<int> pegs) {
     int pegSize = pegs.size();
     if (pegSize < 2)
         return intVector{-1, -1};
-    int a = pegs[0];
+
+    int lastGear = 0;
     int sign = -1;
-    for (auto peg: pegs) {
-        a += 2 * peg * sign;
-        sign *= -1;
-    }
-    a += pegs[pegSize - 1] * sign;
-    a *= 2;
-    int b = (pegSize % 2 == 0) ? 3 : 1;
-
-    if (a % b == 0) {
-        a /= b;
-        b = 1;
+    float radiiEvenMax = std::numeric_limits<float>::lowest();
+    float radiiOddMin = std::numeric_limits<float>::max();
+    for (int i = 0; i < pegSize - 1; ++i) {
+        lastGear -= sign * (pegs[i + 1] - pegs[i]);
+        sign *=-1;
+        if (!(i & 1))
+            radiiOddMin = std::min<float>(radiiOddMin, lastGear);
+        else
+            radiiEvenMax = std::max<float>(radiiEvenMax, lastGear);
     }
 
-    float calculatedR = ((float)a) / ((float)b);
-
-    for (int i = 0; i < pegSize - 2; i++) {
-        int width = pegs[i + 1] - pegs[i];
-        if(calculatedR < 0 || calculatedR > (width - 1))
-            return intVector{-1, -1};
-        calculatedR = width - calculatedR;
+    int numerator = 2 * lastGear;
+    int denominator = abs(1 + 2 * sign);
+    if (numerator < denominator * (radiiEvenMax + 1) || numerator > denominator * (radiiOddMin - 1)) //Check for validity
+        return intVector{-1, -1};
+    if (sign == 1 && numerator % 3 == 0) {
+        numerator /= 3;
+        numerator = abs(numerator);
+        denominator = 1;
     }
-
-    return intVector{a, b};
+    return intVector{numerator, denominator};
 }
