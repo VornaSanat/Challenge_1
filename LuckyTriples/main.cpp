@@ -6,7 +6,7 @@ using namespace std;
 void printResults(std::vector<int> input) {
     LuckyTriple luckyTriple;
     auto output = luckyTriple.run(move(input));
-    cout << "output is : " << output;
+    cout << "output is : " << output << "\n";
 }
 
 int main() {
