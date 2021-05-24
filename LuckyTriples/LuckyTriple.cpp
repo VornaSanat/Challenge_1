@@ -10,11 +10,11 @@ int LuckyTriple::run(std::vector<int> list) {
     if (size < 3)
         return result;
     std::vector<int> devisableCount(size, 0);
-    for (int i = size - 1; i >= 1; --i)
-        for (int j = i - 1; j >= 0; --j)
+    for (int i = 0; i < size; ++i)
+        for (int j = 0; j < i; ++j)
             if (list[i] % list[j] == 0) {
-                devisableCount[j]++;
-                result += devisableCount[i];
+                devisableCount[i]++;
+                result += devisableCount[j];
             }
     return result;
 }
