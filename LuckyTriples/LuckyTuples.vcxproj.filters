@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\HP\chalenge\fatemeh794\Challenge_1\LuckyTriples\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\HP\chalenge\fatemeh794\Challenge_1\LuckyTriples\LuckyTriple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\HP\chalenge\fatemeh794\Challenge_1\LuckyTriples\LuckyTriple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\HP\chalenge\fatemeh794\Challenge_1\LuckyTriples\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ED14D644-C9C8-33E8-837A-F3DAF3F47385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9B7DAAD6-BA97-382C-BA66-BE0F2C14EA3D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+^C:\USERS\HP\CHALENGE\FATEMEH794\CHALLENGE_1\LUCKYTRIPLES\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/HP/chalenge/fatemeh794/Challenge_1/LuckyTriples -BC:/Users/HP/chalenge/fatemeh794/Challenge_1/LuckyTriples --check-stamp-file C:/Users/HP/chalenge/fatemeh794/Challenge_1/LuckyTriples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
