@@ -1,0 +1,3 @@
+C:/Users/HP/chalenge/fatemeh794/Challenge_1/LegendaryValues/CMakeFiles/LegendaryValues.dir
+C:/Users/HP/chalenge/fatemeh794/Challenge_1/LegendaryValues/CMakeFiles/ALL_BUILD.dir
+C:/Users/HP/chalenge/fatemeh794/Challenge_1/LegendaryValues/CMakeFiles/ZERO_CHECK.dir

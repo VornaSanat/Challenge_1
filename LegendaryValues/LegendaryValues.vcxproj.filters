@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\HP\chalenge\fatemeh794\Challenge_1\LegendaryValues\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\HP\chalenge\fatemeh794\Challenge_1\LegendaryValues\LegendaryValue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\HP\chalenge\fatemeh794\Challenge_1\LegendaryValues\LegendaryValue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\HP\chalenge\fatemeh794\Challenge_1\LegendaryValues\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E31A5D17-1DD0-3EE4-9D85-DF63655296B2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{809AF677-4E96-3004-AA26-AD7C2E64FA0A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

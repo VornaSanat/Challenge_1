@@ -11,6 +11,6 @@ void printResults(std::vector<int> input) {
 
 int main() {
     printResults({1, 1, 1});
-    printResults({1, 2, 3, 4, 5, 6});
+    printResults({1, 2, 3,  5, 6});
     return 0;
 }

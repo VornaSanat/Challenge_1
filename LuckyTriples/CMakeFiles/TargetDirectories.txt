@@ -1,0 +1,3 @@
+C:/Users/HP/chalenge/fatemeh794/Challenge_1/LuckyTriples/CMakeFiles/LuckyTuples.dir
+C:/Users/HP/chalenge/fatemeh794/Challenge_1/LuckyTriples/CMakeFiles/ALL_BUILD.dir
+C:/Users/HP/chalenge/fatemeh794/Challenge_1/LuckyTriples/CMakeFiles/ZERO_CHECK.dir

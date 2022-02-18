@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\HP\chalenge\fatemeh794\Challenge_1\LegendaryValues\CMakeFiles\a74bc269427eb05964f4d4f1d65c329a\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{14D71BF2-EEAE-3F5C-86A9-E9BD68CD866B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+^C:\USERS\HP\CHALENGE\FATEMEH794\CHALLENGE_1\LEGENDARYVALUES\CMAKEFILES\A74BC269427EB05964F4D4F1D65C329A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/HP/chalenge/fatemeh794/Challenge_1/LegendaryValues -BC:/Users/HP/chalenge/fatemeh794/Challenge_1/LegendaryValues --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/HP/chalenge/fatemeh794/Challenge_1/LegendaryValues/LegendaryValues.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

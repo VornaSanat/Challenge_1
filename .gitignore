@@ -33,3 +33,8 @@
 
 .idea/
 */cmake-build-debug/
+/.vs
+/EnglishEssay/.vs
+/GearFactory/.vs
+/LuckyTriples/.vs/LuckyTuples/v16
+/LegendaryValues/.vs/LegendaryValues/v16
